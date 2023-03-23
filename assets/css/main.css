@@ -56,12 +56,14 @@
 .header__navbar-item-link1 {
     display: inline-block;
     text-align: center;
+    vertical-align: middle;
     font-size: 13px;
     width: 120px;
     height: 35px;
     background-color: coral;
     border-radius: 50px!important;
     color: #fff;
+    
     /* border: 1px solid green; */
     
 
@@ -90,7 +92,7 @@
 }
 .body__mid .left .text1 {
     display: block;
-    margin-top: 0px!important;
+    margin-top: 20px!important;
     font-size: 25px;
     font-weight: 500;
     min-height: 30px;
@@ -119,8 +121,6 @@
     font-weight: 700;
     color: #fff;
     background-color: coral;
-    font-size: 14px;
-    font-weight: 700;
     border-radius: 50px!important;
 
 }
@@ -247,8 +247,11 @@
 
   .box__mid .content_downloadcv1 a {
     display: inline-block;
-    margin-left: 80px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 0px;
     font-size: 10px;
+    height: 25px;
     text-decoration: none;
     background-color:coral;
     padding: 0px 20px;
@@ -259,19 +262,33 @@
 .box__service {
         display: block;
         margin-left: 100px;
-        margin-top: 100px;
         min-height: 250px;
+        margin-top: 240px;
         border:1px solid red;
     }
-.box__service .box__wid {
+.box__service h6 {
     display: block;
-        justify-content:center;
-        margin-left: 10px;
-        margin-top: 0px;
-        padding: 0 200px;
-        height: 80px;
-        border:1px solid red;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
+    border:1px solid red;
     }
+.box__service p {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        margin:0 0 48px;
+        border:1px solid red;
+        }
+
+    .box__wid .what {
+        display: block;
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
 .box__service .box__content_wrapper {
     margin-top: 10px;
     position: relative;
@@ -280,8 +297,13 @@
     justify-content:center;
     align-items: center;
     display: flex;
-    padding:0px 50px;
-    
+    padding:0px 50px; 
+}
+.box__content h5 {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
 }
 .box__service .box__content_wrapper div:nth-child(1) {
     /* div con dau tien cua box__content_wrapper */
@@ -304,30 +326,28 @@
     width: 90%;
     border:1px solid orchid;
 }
-.box__skill .box__child__skill {
+.box__skill h6 {
     display: block;
-    text-align: top;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    min-height: 18px;
-    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
     border:1px solid orchid;
+
 }
-.box__skill .box__child__whychooseme {
+.box__skill .box__child__whychooseme h6 {
     display: block;
-    margin-top: 0px;
-    margin-bottom: 24px;
-    min-height: 36px;
-    width: 100%;
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     border:1px solid orchid;
 }
 
-.box__skill .box__child__whychoosemecontent {
+.box__skill .box__child__whychoosemecontent p {
     display: block;
-    margin-top: 0px;
-    margin-bottom: 48px;
-    min-height: 70.72px;
-    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin:0 0 48px;
     border:1px solid orchid;
 }
 .box__skill .box__child_skill_show {
@@ -343,7 +363,7 @@
     display: inline-flex;
     justify-content:space-between;
     align-items: center;
-    margin-top: 10px;
+    margin: 10px 0 0 80px;
     min-height: 19.9px;
     width: 40%;
     border:1px solid orchid;
@@ -379,23 +399,83 @@
     padding: 0px 0px 24px 0px;
 
 }
+.content h6 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+.content p {
+    display: block;
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 15px;
+
+
+}
+
+
+
 
 .portfolio .img-wrapper_row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
   }
+
+.column { 
+    position: relative;
+    float: left; 
+    margin: 10px;   
+    
+    }               
+
+
+
+.caption {
+  width:300px;
+  height:150px;
+  background:rgba(255,122,87,.7);
+  opacity:0;   
+  position: absolute;
+  left: 0;
+  top: 40px; 
+
+}
+.column:hover .caption
+{ 
+  opacity: 0.6;
+  text-align:justify;
+  color:#000000;
+  font-size:20px;
+  font-weight:700;
+  padding:30px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin-left: 5px;
+
+}
+
   .portfolio .column {
     flex: 25%;
     max-width: 35%;
     padding: 0 4px;
   }
-  
+
   .portfolio .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
     max-height: 80%;
+  }
+
+  .portfolio .column .fa {
+    font-size: 15px;
+
   }
 
   .Testmonial {
@@ -412,16 +492,19 @@
 .Lorem
 {
     font-size: 15px;
+    color: black;
     font-weight: 400;
     margin: 0px 0px 5px 0px;
     border: 1px solid orange;
 }
 .Testmonial .what_people {
+    color: black;
     font-size: 30px;
     margin: 0px 0px 24px 0px;
     border: 1px solid orange;
 }
 .Testmonial .content {
+    color: black;
     font-size: 16px;
     font-weight: 400;
     border: 1px solid orange;
@@ -429,6 +512,159 @@
     padding: 0px 0px 24px 0px;
 
 }
+/* Slide */
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font: 16px/1.3 sans-serif; }
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	/* height: 100%; Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+	background: #fff;
+	position: absolute;
+	width:       60px;
+	height:      60px;
+	line-height: 60px; /* If you want to place numbers */
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 0;
+}
+.CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:       30px;
+	height:      30px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+.CSSgal .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+  
+/* Slide */
 .Testmonial .border {
     border: 1px solid red;
     margin: 0px 180px;
@@ -442,21 +678,25 @@
 .Testmonial .border .name {
     font-size: 20px;
     margin-bottom: 5px;
+    color: black;
 }
 .Testmonial .border .job {
     font-size: 15px;
     margin-top: 0px;
+    margin-bottom: 40px;
     height: 18px;
     padding-bottom: 20px;
+    color: black;
 }
 
 .Blog {
     display: block;
     text-align: center;
-    height: 500px;
+    height: 800px;
     width: 90%;
     margin-left: 100px;
     margin-top: 80px;
+    padding-bottom: 80px;
     border: 1px solid orange;
 }
 .Blog .Myblog {
@@ -477,3 +717,241 @@
     margin: 0px 0px 5px 0px;
     border: 1px solid orange;
 }
+.Blog .img-wrapper_row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    border: 1px solid orange;
+  }
+  .Blog  .column {
+    flex: 25%;
+    max-width: 35%;
+    padding: 0 4px;
+    border: 1px solid orange;
+  }
+  
+  .Blog .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    max-height: 80%;
+  }
+
+  .Blog .column h5 {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 20px 0 20px;
+    margin: 0;
+  }
+  .Blog .column .link a, i {
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: -25%;
+    max-width: fit-content;
+    text-decoration: none;
+    
+  }
+  .Blog .column .content {
+    display: flex;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 0 20px;
+  }
+  .Blog .column .More {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 4%;
+  }
+  
+
+.Hiremee {
+    display: inline-block;
+    height: 120px;
+    width: 90%;
+    margin: 80px 0 0 100px;
+    padding: 20px;
+    border: 1px solid #ff7a57;
+    background-color: #ff7a57;
+
+}
+
+.Hiremee h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f8f9fa;
+    margin:0 0 0 5px;
+}
+
+.Hiremee p {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 70%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f8f9fa;
+    
+}
+.Hiremee a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    height: 35px;
+    margin-right: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    color:black;
+    background-color: #fff;
+    border-radius: 50px!important;
+}
+
+.Contact .top {
+    display: block;
+    text-align: center;
+    height: 110px;
+    width: 90%;
+    margin-left: 100px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    border: 1px solid orange;
+}
+.top .Cont {
+    font-size: 15px;
+    font-weight: 500;
+    margin:0 0 5px;
+}
+.top .Get {
+    font-size: 30px;
+    font-weight: 500;
+    margin:0 0 24px;
+
+}
+.top .pa {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin:0 0 24px;
+    padding: 0 0 48px;
+}
+.Contact .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 100px;
+    height: 400px;
+    width: 90%;
+    border: 1px solid orange;
+}
+.bottom .mail {
+    margin-top: 0;
+    margin-left: 300px;
+    width: 50%;
+    height: 350px;
+    border: 1px solid orange;
+}
+.mail .Available {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 5px 20px;
+}
+.mail .getin {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 24px 20px;
+}
+
+.bottom .adress {
+    width: 60%;
+    height: 350px;
+    margin-right: 300px;
+    border: 1px solid black;
+}
+.adress .location {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 100px 0 0 20px;
+    
+}
+.adress .location i {
+    border: none;
+    margin: 0 0 0 20px;
+    font-size: 20px;
+}
+.adress .location2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 20px 35px;
+}
+
+.adress .phone {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 0 20px;
+}
+.adress .phone .fa {
+    border: none;
+    margin: 0 0 0 20px;
+}
+.adress .phone2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 20px 35px;
+}
+
+.adress .email {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 0 20px;
+}
+.adress .email .fa{
+    border: none;
+    margin: 0 0 0 20px;
+}
+.adress .email2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 20px 35px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type=submit] {
+    width: 100%;
+    background-color: #ff7a57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button [type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .input {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  iframe {
+    display: block;
+    margin-left: 100px;
+    height: 300px;
+    width: 90%;
+  }
